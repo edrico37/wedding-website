@@ -26,14 +26,22 @@ body {
   height: 500px;
   padding: 20px;
   > h1 {
-    font-size: 48px;
+    font-size: 30px;
     margin-top: 0;
     .title-block;
   }
   > h2 {
-    font-size: 28px;
+    font-size: 20px;
     margin-top: 0;
     .title-block;
+  }
+  @media (min-width: @screen-sm-min) {
+    > h1 {
+      font-size: 48px;
+    }
+    > h2 {
+      font-size: 30px;
+    }
   }
 }
 
